@@ -1,0 +1,25 @@
+{
+  "name": "fb-share-bot",
+  "version": "1.0.0",
+  "description": "Express server para sa automated Facebook post sharing at scheduled deletion.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "express",
+    "axios",
+    "facebook",
+    "graph-api"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.7.0",
+    "express": "^4.19.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
