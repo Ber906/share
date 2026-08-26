@@ -6,9 +6,8 @@ const app = express();
 app.use(express.json());
 
 // Helper function para sa delay (pause) sa pagitan ng requests
-app.get('/api/share', async (req, res) => {
-  const accessToken = req.query.token;
-  const shareUrl = req.query.url;
+app.post('/api/share', async (req, res) => {
+  const { token: accessToken, url: shareUrl } = req.body;
 
     if (!accessToken || !shareUrl) {
       return res.status(400).json({ error: 'Both token and URL are required' });
