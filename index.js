@@ -17,7 +17,7 @@ async function deletePost(postId, accessToken) {
   }
 }
 
-app.post('/bard', async (req, res) => {
+app.post('/share', async (req, res) => {
   try {
     // Kunin ang mga kinakailangang data sa req.body
     const { token: accessToken, url: shareUrl, amount } = req.body;
